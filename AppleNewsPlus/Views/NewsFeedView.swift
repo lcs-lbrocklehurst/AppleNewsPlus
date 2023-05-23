@@ -9,7 +9,17 @@ import SwiftUI
 
 struct NewsFeedView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+           Image("Farmer")
+                .resizable()
+                .scaledToFit()
+            
+            Image("The globe and mail")
+            
+            Text("Maritime farmers holding breath as record-dry spring wings region")
+                .font(.title2)
+                .fontWeight(.semibold)
+        }
     }
 }
 
