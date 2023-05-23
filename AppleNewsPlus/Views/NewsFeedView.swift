@@ -15,11 +15,25 @@ struct NewsFeedView: View {
                 .scaledToFit()
             
             Image("The globe and mail")
+                .resizable()
+                .scaledToFit()
             
             Text("Maritime farmers holding breath as record-dry spring wings region")
-                .font(.title2)
+                .font(.title)
                 .fontWeight(.semibold)
+                .padding(.horizontal)
+            
+            Divider()
+            
+            HStack {
+                Text("1h ago")
+                Spacer()
+                Image(systemName: "ellipsis")
+            }
+            .padding([.horizontal, .bottom])
         }
+        .background(Color("Dark grey"))
+        .cornerRadius(25.0)
     }
 }
 
